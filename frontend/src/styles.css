@@ -1,0 +1,28 @@
+:root{--bg:#fbf7f1;--card:#fff;--ink:#241c15;--mut:#7a6d60;--acc:#d9531e;--acc2:#fde6da;--line:#eadfd2}
+@media (prefers-color-scheme:dark){:root{--bg:#17120e;--card:#221b15;--ink:#f4ece3;--mut:#a39485;--acc:#ff7a45;--acc2:#3a2418;--line:#372c22}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+main{max-width:720px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:26px;margin:6px 0}h2{font-size:20px;margin:20px 0 8px}
+.sub{color:var(--mut)}.err{color:#c0392b}.note{color:var(--mut);font-size:13px;margin-top:24px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.row{display:flex;gap:8px;flex-wrap:wrap}.center{justify-content:center}
+input{width:100%;padding:14px;margin:6px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font-size:16px}
+.row input{flex:1;min-width:0;width:auto}
+input[type=checkbox]{width:20px;height:20px;margin:0;accent-color:var(--acc)}
+button{font:inherit;font-weight:600;cursor:pointer;border:0;border-radius:12px;padding:12px 18px;background:var(--acc);color:#fff}
+button.ghost{background:var(--acc2);color:var(--acc)}button:disabled{opacity:.5;cursor:default}
+button.wide{width:100%;padding:16px;font-size:18px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.chip{background:var(--card);border:1px solid var(--line);color:var(--ink);padding:6px 12px;border-radius:99px;font-weight:500;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:12px 0}
+.meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--mut);font-size:14px}
+.ing{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.ing:last-child{border:0}.ing.done span{text-decoration:line-through;color:var(--mut)}
+.scaler{display:flex;align-items:center;gap:12px}.scaler button{padding:6px 14px;font-size:18px}
+.bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin:10px 0}
+.bar i{display:block;height:100%;background:var(--acc);transition:width .25s}
+.step{font-size:26px;line-height:1.4;font-weight:500;margin:18px 0;min-height:140px}
+.tip{background:var(--acc2);padding:10px 12px;border-radius:10px;font-size:15px}
+.timer{font-size:44px;font-weight:700;font-variant-numeric:tabular-nums;text-align:center;margin:6px 0 10px}
+.nav{display:flex;gap:10px}.nav button{flex:1;padding:16px;font-size:18px}
