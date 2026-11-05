@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CookGuide (free-tier edition)
 
 Type any dish, get a guided cooking session: ingredient checklist, serving scaler, one-step-at-a-time Cook Mode with timers, read-aloud, voice commands, screen wake lock, and an installable PWA.
@@ -70,3 +71,4 @@ Point your domain's A record at the server first. Ports 80 and 443 must be open.
 | GET | `/api/favorites` | auth required |
 | PUT/DELETE | `/api/favorites/{recipe_id}` | auth required |
 | GET | `/api/health` | health check |
+=======
